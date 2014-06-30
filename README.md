@@ -32,5 +32,5 @@ k) latitude: latitude of current location
 l) geolocationAccuracy: precision of location data in meters
 
 
-The application uses the File-tail gem (Link: https://github.com/flori/file-tail) to continuously tail the CSV file and convert the fields to Measurement Points.
+The application uses the File-tail gem (Link: https://github.com/flori/file-tail) to continuously tail the CSV file and the OML4r gem (Link: https://github.com/mytestbed/oml4r) to convert the fields to Measurement Points.
 
