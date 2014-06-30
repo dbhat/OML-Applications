@@ -7,17 +7,15 @@ The example here is written for an application that measures the signal strength
 
 ### The sample CSV file:
 <pre><code>
-
 "1401394008","6C:F3:73:99:FA:1E","samsung","SPH-D710","Android","EVDO Rev 0","Sprint","99.207.13.249",-96,,"-82.8344","34.676","23.517"
 "1401393251","f8:a9:d0:66:7d:78","LGE","LG-D801","Android","Wifi",,"198.21.252.5",-81,"eduroam","-82.8344","34.676","25.854"
 "1401392753","6C:F3:73:99:FA:1E","samsung","SPH-D710","Android","EVDO Rev 0","Sprint","99.207.13.249",-96,,"-82.8344","34.676","17.06"
 "1401392748","6C:F3:73:99:FA:1E","samsung","SPH-D710","Android","EVDO Rev 0","Sprint","99.207.13.249",-96,,"-82.8344","34.676","24.803"
 "1401392619","6C:F3:73:99:FA:1E","samsung","SPH-D710","Android","EVDO Rev 0","Sprint","99.207.13.249",-101,,"-82.8344","34.676","20"
 "1401392598","6C:F3:73:99:FA:1E","samsung","SPH-D710","Android","EVDO Rev 0","Sprint","99.207.13.249",-96,,"-82.8344","34.676","21.088"
-
 </code></pre>
 ### Explanation of the above fields in order of appearance, separated by ','
-
+<pre><code>
 a) testTime: Timestamp of when the test was initiated in unix timestamp
 b) mac: We use this to uniquely identify the devices. It is the MAC
 address of the Wifi interface of a device.
@@ -32,7 +30,7 @@ i) ssid: SSID of the wifi network used (null for cell tests)
 j) longitude: longitude of current location
 k) latitude: latitude of current location
 l) geolocationAccuracy: precision of location data in meters
-
+</code></pre>
 
 The application uses the File-tail gem (Link: https://github.com/flori/file-tail) to continuously tail the CSV file and the OML4r gem (Link: https://github.com/mytestbed/oml4r) to convert the fields to Measurement Points.
 
