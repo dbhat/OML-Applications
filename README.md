@@ -34,3 +34,6 @@ l) geolocationAccuracy: precision of location data in meters
 
 The application uses the File-tail gem (Link: https://github.com/flori/file-tail) to continuously tail the CSV file and the OML4r gem (Link: https://github.com/mytestbed/oml4r) to convert the fields to Measurement Points.
 
+wimaxss_app.rb - The OML4r application defnition.
+wimaxss.oedl - The OEDL script for LabWiki. The path of the file and location of application script are variable parameters.
+
